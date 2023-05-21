@@ -3,6 +3,8 @@
   [placeholder]="placeholder"
   class="form-control"
   (keyup.enter)="emitValue(txtInput.value)"
+  [value]="initialValue"
+  (keyup)="onKeyPress(txtInput.value)"
   #txtInput
 >
 
